@@ -34,3 +34,9 @@ resource "aws_s3_bucket" "example" {
     Environment = var.environment
   }
 }
+
+
+import {
+  to = aws_s3_bucket.my_bucket
+  id = "test-123456870-new"
+}
