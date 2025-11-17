@@ -22,7 +22,7 @@ provider "aws" {
 variable "aws_region" {
   description = "AWS region for resources"
   type        = string
-  default     = "ap-south-1"
+  default     = "us-east-1"
 }
 
 variable "bucket_name" {
