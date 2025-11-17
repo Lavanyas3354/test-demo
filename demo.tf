@@ -16,7 +16,14 @@ terraform {
 }
 
 provider "aws" {
-  region = us-east-1
+  region = "us-east-1"
+}
+
+# Add this variable because you are using var.environment
+variable "environment" {
+  type        = string
+  default     = "dev"
+  description = "Environment tag"
 }
 
 resource "aws_s3_bucket" "example" {
@@ -27,4 +34,3 @@ resource "aws_s3_bucket" "example" {
     Environment = var.environment
   }
 }
-
