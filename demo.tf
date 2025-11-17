@@ -23,7 +23,7 @@ provider "aws" {
 variable "environment" {
   type        = string
   default     = "dev"
-  description = "Environment tag"
+  description = "Environment-tag"
 }
 
 resource "aws_s3_bucket" "example" {
