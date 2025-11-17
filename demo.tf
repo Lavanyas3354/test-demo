@@ -40,3 +40,8 @@ import {
   to = aws_s3_bucket.my_bucket
   id = "test-123456870-new"
 }
+
+
+resource "aws_s3_bucket" "my_bucket" {
+  bucket = "test-123456870-new"
+}
