@@ -22,7 +22,7 @@ provider "aws" {
 # Add this variable because you are using var.environment
 variable "environment" {
   type        = string
-  default     = "dev"
+  default     = "dev-t"
   description = "Environment-tag-test"
 }
 
