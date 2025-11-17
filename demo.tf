@@ -16,31 +16,14 @@ terraform {
 }
 
 provider "aws" {
-  region = var.aws_region
-}
-
-variable "aws_region" {
-  description = "AWS region for resources"
-  type        = string
-  default     = "us-east-1"
-}
-
-variable "bucket_name" {
-  description = "Name of the S3 bucket"
-  type        = string
-}
-
-variable "environment" {
-  description = "Environment tag"
-  type        = string
-  default     = "dev"
+  region = us-east-1
 }
 
 resource "aws_s3_bucket" "example" {
-  bucket = "lavanya-demo-bucket-2025-test-3354"
+  bucket = "lavanya-demo-bucket-2050-test-3354"
 
   tags = {
-    Name        = "lavanya-demo-bucket-2025-test-3354"
+    Name        = "lavanya-demo-bucket-2050-test-3354"
     Environment = var.environment
   }
 }
