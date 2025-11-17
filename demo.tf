@@ -30,7 +30,7 @@ resource "aws_s3_bucket" "example" {
   bucket = "lavanya-demo-bucket-2050-test-33545"
 
   tags = {
-    Name        = "lavanya-demo-bucket-2050-test-3354"
+    Name        = "lavanya-demo-bucket-2050-test-t-3354"
     Environment = var.environment
   }
 }
