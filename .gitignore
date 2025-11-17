@@ -1,0 +1,10 @@
+# terraform
+.terraform/
+crash.log
+override.tf
+override.tf.json
+*.tfstate
+*.tfstate.*
+*.backup
+.terraform.lock.hcl   # optional to ignore; many teams DO commit this file
+
