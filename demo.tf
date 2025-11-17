@@ -1,4 +1,4 @@
- terraform {
+terraform {
   cloud {
     organization = "lavanyacloud"
 
@@ -19,11 +19,29 @@ provider "aws" {
   region = var.aws_region
 }
 
+variable "aws_region" {
+  description = "AWS region for resources"
+  type        = string
+  default     = "ap-south-1"
+}
+
+variable "bucket_name" {
+  description = "Name of the S3 bucket"
+  type        = string
+}
+
+variable "environment" {
+  description = "Environment tag"
+  type        = string
+  default     = "dev"
+}
+
 resource "aws_s3_bucket" "example" {
-  bucket = var.bucket_name
+  bucket = "lavanya-demo-bucket-2025-test-3354"
 
   tags = {
-    Name        = var.bucket_name
+    Name        = "lavanya-demo-bucket-2025-test-3354"
     Environment = var.environment
   }
 }
+
